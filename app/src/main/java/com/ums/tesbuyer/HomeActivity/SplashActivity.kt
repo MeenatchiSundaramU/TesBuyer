@@ -14,6 +14,7 @@ import com.ums.tesbuyer.Authentication.SignInActivity
 import com.ums.tesbuyer.R
 
 class SplashActivity : AppCompatActivity() {
+    //Hello
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
