@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity.Home_Fragment.Search.SearchFragment">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/holo_orange_light"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="Chicken"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:id="@+id/chicken"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/holo_orange_light"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="Mutton"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:id="@+id/mutton"
+        android:layout_below="@+id/chicken"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/holo_orange_light"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="Fish"
+        android:layout_below="@+id/mutton"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:id="@+id/fish"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>
+</RelativeLayout>

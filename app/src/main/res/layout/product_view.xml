@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/histimageview"
+                android:layout_centerHorizontal="true">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="90dp"
+                    app:civ_border_width="2dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_margin="5dp"
+                    android:id="@+id/flesh_image_show"
+                    android:layout_gravity="center"
+                    android:layout_height="75dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/histimageview">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chicken"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="75dp"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="17sp"
+                        android:id="@+id/fleshname"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flesh Varities: "
+                        android:layout_below="@+id/fleshname"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/histsetfarmername"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/histsethqq"
+                        android:id="@+id/varivalue"
+                        android:text="Nattukolzhi"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/fleshname"
+                        android:layout_margin="10dp"
+                        android:textColor="#000000"/>
+
+
+
+
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Avail(in Kg): "
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:layout_below="@+id/histsetfarmername"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/histsethqq"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/histsethqq"
+                        android:id="@+id/totalvalue"
+                        android:text="25"
+                        android:layout_below="@+id/varivalue"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="5dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price(per Kg): "
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:layout_below="@+id/histsethqq"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/histsetmqq"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/histsethqq"
+                        android:id="@+id/pricevalue"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:layout_below="@+id/totalvalue"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000000"/>
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Grow Type: "
+                        android:layout_below="@+id/histsetmqq"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/histsetlqq"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/histsethqq"
+                        android:id="@+id/growvalue"
+                        android:text="Natural"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_below="@+id/pricevalue"
+                        android:textColor="#000000"/>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/histsetlqq"
+                        android:orientation="vertical"
+                        android:id="@+id/quantity">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Enter Rquired Quantity(in Kg)"
+                            android:layout_below="@+id/histsetlqq"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="10dp"
+
+                            android:id="@+id/histsethqqprice"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@android:color/holo_blue_light"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginEnd="20dp"
+                            android:hint="Enter Required Quantity"
+                            android:id="@+id/req_value"
+                            android:inputType="number"/>
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@android:color/holo_orange_light"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/quantity"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginEnd="50dp"
+                            android:text="Get Price"
+                            android:textSize="20sp"
+                            android:textAllCaps="false"
+                            android:id="@+id/getpricebtn"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/white"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@android:color/holo_blue_light"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginEnd="20dp"
+                            android:text="Rs."
+                            android:textAlignment="center"
+                            android:id="@+id/price_display"
+                            android:inputType="number"/>
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@android:color/holo_orange_light"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/price_display"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginEnd="50dp"
+                            android:text="Add To Cart"
+                            android:textSize="20sp"
+                            android:textAllCaps="false"
+                            android:id="@+id/cartbtn"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/white"/>
+                    </LinearLayout>
+
+
+
+
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>
